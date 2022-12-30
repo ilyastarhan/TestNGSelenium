@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite">
+    <test name="Parameters Test">
+        <parameter name="name" value="Ahmet"/>
+        <parameter name="double" value="6.5"></parameter>
+        <parameter name="int2" value="5"></parameter>
+        <classes>
+            <class name="clarusway.tests.Day02_C02_Parameters">
+            </class>
+        </classes>
+    </test>
+</suite>
