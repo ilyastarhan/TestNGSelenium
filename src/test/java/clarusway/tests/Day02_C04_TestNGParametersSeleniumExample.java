@@ -8,10 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -55,5 +52,9 @@ public class Day02_C04_TestNGParametersSeleniumExample {
         WebElement result = driver.findElement(By.xpath("//span[@class='a-color-state a-text-bold']"));
         Thread.sleep(3000);
         Assert.assertTrue(result.getText().contains(kelime), "aranan kelime bulunamadi");
+
+
     }
+
+
 }
