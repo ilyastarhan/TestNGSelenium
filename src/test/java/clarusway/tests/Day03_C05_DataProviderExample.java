@@ -26,7 +26,7 @@ public class Day03_C05_DataProviderExample extends BaseTest {
         Thread.sleep(3000);
     }
 
-    @DataProvider(name = "data-provider")
+    @DataProvider(name = "data-provider" )
     public Object[][] dpMethod() {
         return new Object[][]{{"Java"}, {"JavaScript"}, {"Phyton"}};
     }
