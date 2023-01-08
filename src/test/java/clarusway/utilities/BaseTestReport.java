@@ -35,7 +35,7 @@ public class BaseTestReport {
         // Report PATH= creates the html report right under test-output
         //rapor oluştuktan sonra raporunuz nereye eklensin istiyorsanız buraya yazıyorsunuz.
         String currentDate = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String filePath = System.getProperty("user.dir") + "/test-output/report/" + currentDate + "test_report.html";
+        String filePath = System.getProperty("user.dir") + "/test-output/report/" + currentDate + "_test_report.html";
 
         //Attach html and extent reports
         //oluşturmak istediğimiz raporu (html formatında) başlatıyoruz, filePath ile dosya yolunu belirliyoruz.
@@ -46,10 +46,10 @@ public class BaseTestReport {
         // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
         extentReports.setSystemInfo("Environment", "QA");
         extentReports.setSystemInfo("Browser", "Chrome"); // chrome, firefox
-        extentReports.setSystemInfo("QA Engineer", "Karl");
+        extentReports.setSystemInfo("QA Engineer", "Ilyas");
         extentHtmlReporter.config().setDocumentTitle("Report");
         extentHtmlReporter.config().setReportName("TestNG Reports");
-        extentHtmlReporter.config().setDocumentTitle(new SimpleDateFormat("ddMMyyyy_HHmmss").format(new Date()) + "_Son Test");//test doc uzerinde tarih yazili olacak
+        extentHtmlReporter.config().setDocumentTitle(new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + "_reportTest");//test doc uzerinde tarih yazili olacak
 
 
     }

@@ -3,6 +3,7 @@
 <suite name="Failed suite [Listener Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="clarusway.utilities.MyReporter"/>
+    <listener class-name="clarusway.tests.Day05_C02_ITestListener"/>
     <listener class-name="org.testng.reporters.FailedReporter"/>
   </listeners>
   <test thread-count="5" name="Listener Tests(failed)">

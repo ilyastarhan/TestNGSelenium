@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listener Test Suite">
+    <parameter name="browser" value="firefox"></parameter>
+    <test name="Listener Tests" parallel="methods">
+
+        <classes>
+            <class name="clarusway.tests.Day05_C01_HTMLReport">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
